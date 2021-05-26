@@ -1,5 +1,5 @@
 //
-//  DashboardViewController.swift
+//  IntroViewController.swift
 //  IamRich
 //
 //  Created by itsupport on 27/05/21.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class IntroViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Dashboard"
+        title = "INTRO"
+        // Do any additional setup after loading the view.
     }
     
 

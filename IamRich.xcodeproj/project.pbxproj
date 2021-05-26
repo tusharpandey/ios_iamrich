@@ -17,6 +17,7 @@
 		DE5B99AD265621ED00720710 /* IamRichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B99AC265621ED00720710 /* IamRichUITests.swift */; };
 		DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */; };
 		DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */; };
+		DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A062265ED58C0065BF4B /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DE5B99AE265621ED00720710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		DEA8A062265ED58C0065BF4B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				DE5B998C265621E900720710 /* SceneDelegate.swift */,
 				DE5B998E265621E900720710 /* LoginViewController.swift */,
 				DE5B9990265621E900720710 /* Main.storyboard */,
+				DEA8A062265ED58C0065BF4B /* IntroViewController.swift */,
 				DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */,
 				DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */,
 				DE5B9993265621ED00720710 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 				DE5B998F265621E900720710 /* LoginViewController.swift in Sources */,
 				DE5B998B265621E900720710 /* AppDelegate.swift in Sources */,
 				DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */,
+				DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */,
 				DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */,
 				DE5B998D265621E900720710 /* SceneDelegate.swift in Sources */,
 			);

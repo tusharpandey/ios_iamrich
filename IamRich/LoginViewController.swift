@@ -9,9 +9,23 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    
+    //--
+    
+    @IBAction func userLogined(_ sender: Any) {
+                let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = mainStoryboard.instantiateViewController(withIdentifier: "DashboardViewController")
+                UIApplication.shared.windows.first?.rootViewController = viewController
+                UIApplication.shared.windows.first?.makeKeyAndVisible(
+                )
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Login"
         view.backgroundColor = .red
+    
+
     }
 }
 
