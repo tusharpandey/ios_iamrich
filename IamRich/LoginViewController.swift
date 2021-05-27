@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func userLogined(_ sender: Any) {
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "DashboardViewController")
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "DashboardRootNavigationController")
         UIApplication.shared.windows.first?.rootViewController = viewController
         UIApplication.shared.windows.first?.makeKeyAndVisible()
     }

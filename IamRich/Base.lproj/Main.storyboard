@@ -37,7 +37,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="IamRich" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="IamRich" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,7 +98,21 @@
                     <view key="view" contentMode="scaleToFill" id="VVs-c6-iaa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFy-Tq-d4v">
+                                <rect key="frame" x="146.66666666666666" y="418" width="120.99999999999997" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="userLoggedOut:" destination="mns-7A-tcH" eventType="touchUpInside" id="UrW-V0-ybU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XFy-Tq-d4v" firstAttribute="centerX" secondItem="VVs-c6-iaa" secondAttribute="centerX" id="iYi-y4-Ic2"/>
+                            <constraint firstItem="XFy-Tq-d4v" firstAttribute="centerY" secondItem="VVs-c6-iaa" secondAttribute="centerY" id="up5-Ek-28E"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ETJ-rq-aea"/>
                     </view>
                     <navigationItem key="navigationItem" id="vQt-aW-NcZ"/>
@@ -128,7 +142,7 @@
         <!--Navigation Controller-->
         <scene sceneID="4AZ-NV-r7w">
             <objects>
-                <navigationController storyboardIdentifier="DashboardRootNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="G29-KW-Rk8" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DashboardRootNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="G29-KW-Rk8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQY-tR-9fH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
