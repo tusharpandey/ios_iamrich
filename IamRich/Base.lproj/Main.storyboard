@@ -43,10 +43,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQ4-KT-heo">
-                                <rect key="frame" x="152" y="407" width="114" height="60"/>
+                                <rect key="frame" x="61" y="407" width="296" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Go To Dashboard"/>
                                 <connections>
                                     <action selector="userLogined:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djb-TV-SOX"/>
                                 </connections>
@@ -69,24 +69,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="DASHBOARD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbZ-ww-6Tt">
-                                <rect key="frame" x="63" y="318" width="294" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Wh2-3Z-6fe"/>
-                                    <constraint firstAttribute="height" constant="200" id="tUG-sS-OdO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vX0-gK-lfh">
+                                <rect key="frame" x="82.666666666666686" y="418" width="249" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Go To Settings"/>
+                                <connections>
+                                    <segue destination="mns-7A-tcH" kind="show" id="zUm-z8-g1C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vX0-gK-lfh" firstAttribute="centerX" secondItem="ayu-2h-VoV" secondAttribute="centerX" id="55U-SW-rBi"/>
+                            <constraint firstItem="vX0-gK-lfh" firstAttribute="centerY" secondItem="ayu-2h-VoV" secondAttribute="centerY" id="qy3-SO-xny"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WgS-YL-kqa"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nJg-8c-UXF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cz-73-SEr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="-557"/>
+            <point key="canvasLocation" x="1540.5797101449277" y="-618.08035714285711"/>
+        </scene>
+        <!--Settting View Controller-->
+        <scene sceneID="Gxb-Wd-W3Z">
+            <objects>
+                <viewController id="mns-7A-tcH" customClass="SetttingViewController" customModule="IamRich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VVs-c6-iaa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ETJ-rq-aea"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vQt-aW-NcZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEc-V2-szl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2457.971014492754" y="-615.40178571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1ts-6Y-WCW">
@@ -105,6 +124,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NsI-xa-4UF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-669.56521739130437" y="89.732142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4AZ-NV-r7w">
+            <objects>
+                <navigationController storyboardIdentifier="DashboardRootNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="G29-KW-Rk8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mQY-tR-9fH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gmL-t5-thu" kind="relationship" relationship="rootViewController" id="Bpu-Ma-DGe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bfw-5t-eko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630.43478260869574" y="-618.08035714285711"/>
         </scene>
     </scenes>
 </document>

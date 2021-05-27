@@ -18,6 +18,7 @@
 		DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */; };
 		DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */; };
 		DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A062265ED58C0065BF4B /* IntroViewController.swift */; };
+		DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DEA8A062265ED58C0065BF4B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				DE5B998C265621E900720710 /* SceneDelegate.swift */,
 				DE5B998E265621E900720710 /* LoginViewController.swift */,
 				DE5B9990265621E900720710 /* Main.storyboard */,
+				DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */,
 				DEA8A062265ED58C0065BF4B /* IntroViewController.swift */,
 				DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */,
 				DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */,
@@ -271,6 +274,7 @@
 				DE5B998F265621E900720710 /* LoginViewController.swift in Sources */,
 				DE5B998B265621E900720710 /* AppDelegate.swift in Sources */,
 				DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */,
+				DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */,
 				DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */,
 				DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */,
 				DE5B998D265621E900720710 /* SceneDelegate.swift in Sources */,
