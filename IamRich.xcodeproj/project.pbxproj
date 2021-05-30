@@ -18,6 +18,7 @@
 		DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */; };
 		DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */; };
 		DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A062265ED58C0065BF4B /* IntroViewController.swift */; };
+		DEC8913826636C86008570AE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8913726636C86008570AE /* QuizViewController.swift */; };
 		DEECB92426615C3000150384 /* EggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECB92326615C3000150384 /* EggViewController.swift */; };
 		DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DEA8A062265ED58C0065BF4B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DEC8913726636C86008570AE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		DEECB92326615C3000150384 /* EggViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggViewController.swift; sourceTree = "<group>"; };
 		DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 		DE5B9989265621E900720710 /* IamRich */ = {
 			isa = PBXGroup;
 			children = (
+				DEC8913626636C62008570AE /* features */,
 				DE5B998A265621E900720710 /* AppDelegate.swift */,
 				DE5B998C265621E900720710 /* SceneDelegate.swift */,
 				DE5B998E265621E900720710 /* LoginViewController.swift */,
@@ -141,6 +144,22 @@
 				DE5B99AE265621ED00720710 /* Info.plist */,
 			);
 			path = IamRichUITests;
+			sourceTree = "<group>";
+		};
+		DEC8913526636C54008570AE /* mvc */ = {
+			isa = PBXGroup;
+			children = (
+				DEC8913726636C86008570AE /* QuizViewController.swift */,
+			);
+			path = mvc;
+			sourceTree = "<group>";
+		};
+		DEC8913626636C62008570AE /* features */ = {
+			isa = PBXGroup;
+			children = (
+				DEC8913526636C54008570AE /* mvc */,
+			);
+			path = features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +299,7 @@
 				DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */,
 				DEECB92426615C3000150384 /* EggViewController.swift in Sources */,
 				DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */,
+				DEC8913826636C86008570AE /* QuizViewController.swift in Sources */,
 				DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */,
 				DE5B998D265621E900720710 /* SceneDelegate.swift in Sources */,
 			);
