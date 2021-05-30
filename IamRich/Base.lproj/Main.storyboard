@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,17 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4s-rP-Uqn">
-                                <rect key="frame" x="87" y="406" width="244" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="GO TO LOGIN"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Emi-7A-ohI"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-gy-dbp">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBi-fv-b3g">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="Azw-H3-cm6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ytb-P3-pE0">
+                                        <rect key="frame" x="0.0" y="50" width="100" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Egg"/>
+                                        <connections>
+                                            <segue destination="awG-6o-xjd" kind="show" id="4Zc-bB-4XQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="4iV-32-ZuR"/>
+                                    <constraint firstAttribute="width" constant="100" id="Wg4-Pe-o7b"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="F1N-gy-dbp" firstAttribute="centerY" secondItem="V3N-Oa-jnZ" secondAttribute="centerY" id="WwA-0r-ECU"/>
+                            <constraint firstItem="F1N-gy-dbp" firstAttribute="centerX" secondItem="V3N-Oa-jnZ" secondAttribute="centerX" id="gC3-qY-9Q9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DyX-uW-jKK"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Dn-ch-089"/>
@@ -156,6 +177,93 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfw-5t-eko" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="630.43478260869574" y="-618.08035714285711"/>
+        </scene>
+        <!--Egg View Controller-->
+        <scene sceneID="GKf-GZ-rNk">
+            <objects>
+                <viewController id="awG-6o-xjd" customClass="EggViewController" customModule="IamRich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwl-n4-GB7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How do you like your eggs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud1-cs-yrq">
+                                <rect key="frame" x="20" y="176" width="374" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QOz-g8-cwD">
+                                <rect key="frame" x="20" y="312" width="374" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spM-oI-zm1">
+                                        <rect key="frame" x="0.0" y="0.0" width="119.33333333333333" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="EGG-1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eggClicked:" destination="awG-6o-xjd" eventType="touchUpInside" id="mdg-6L-lbb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Efl-Ge-JJL">
+                                        <rect key="frame" x="127.33333333333334" y="0.0" width="119.33333333333334" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="EGG-2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eggClicked:" destination="awG-6o-xjd" eventType="touchUpInside" id="0yf-ys-f0X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8I-NH-HlP">
+                                        <rect key="frame" x="254.66666666666671" y="0.0" width="119.33333333333334" height="100"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="EGG-3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="eggClicked:" destination="awG-6o-xjd" eventType="touchUpInside" id="tb6-ux-FEh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GdC-Kg-zLo"/>
+                                </constraints>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9OI-v8-fsu">
+                                <rect key="frame" x="20" y="512" width="374" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QOz-g8-cwD" firstAttribute="leading" secondItem="xHk-UB-dKT" secondAttribute="leading" constant="20" id="5G4-eE-TUm"/>
+                            <constraint firstItem="Ud1-cs-yrq" firstAttribute="leading" secondItem="pwl-n4-GB7" secondAttribute="leading" constant="20" id="KRb-6u-Olu"/>
+                            <constraint firstItem="9OI-v8-fsu" firstAttribute="leading" secondItem="pwl-n4-GB7" secondAttribute="leadingMargin" constant="20" id="Kcd-eo-Pfv"/>
+                            <constraint firstItem="Ud1-cs-yrq" firstAttribute="centerX" secondItem="pwl-n4-GB7" secondAttribute="centerX" id="Lsl-6w-yqF"/>
+                            <constraint firstItem="9OI-v8-fsu" firstAttribute="leading" secondItem="pwl-n4-GB7" secondAttribute="leading" constant="20" id="Qac-Rq-LOb"/>
+                            <constraint firstItem="9OI-v8-fsu" firstAttribute="centerX" secondItem="pwl-n4-GB7" secondAttribute="centerX" id="Tep-JO-dfh"/>
+                            <constraint firstItem="9OI-v8-fsu" firstAttribute="top" secondItem="QOz-g8-cwD" secondAttribute="bottom" constant="100" id="a71-lE-0UV"/>
+                            <constraint firstItem="QOz-g8-cwD" firstAttribute="top" secondItem="Ud1-cs-yrq" secondAttribute="bottom" constant="100" id="hSk-Dy-1Mw"/>
+                            <constraint firstItem="Ud1-cs-yrq" firstAttribute="top" secondItem="xHk-UB-dKT" secondAttribute="top" constant="88" id="tfL-VQ-08G"/>
+                            <constraint firstAttribute="trailing" secondItem="9OI-v8-fsu" secondAttribute="trailing" constant="20" id="ube-YH-DQk"/>
+                            <constraint firstItem="xHk-UB-dKT" firstAttribute="trailing" secondItem="QOz-g8-cwD" secondAttribute="trailing" constant="20" id="vzy-FD-nUa"/>
+                            <constraint firstAttribute="trailing" secondItem="Ud1-cs-yrq" secondAttribute="trailing" constant="20" id="yFd-is-Syo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9OI-v8-fsu" secondAttribute="trailing" constant="20" id="zCx-So-ikW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xHk-UB-dKT"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5as-Vj-lhY"/>
+                    <connections>
+                        <outlet property="progressBar" destination="9OI-v8-fsu" id="4ef-qC-tc8"/>
+                        <outlet property="titleLabel" destination="Ud1-cs-yrq" id="zhQ-di-65h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E52-rf-FVi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="602.89855072463774" y="904.6875"/>
         </scene>
     </scenes>
 </document>
