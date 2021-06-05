@@ -16,9 +16,13 @@
 		DE5B99A2265621ED00720710 /* IamRichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B99A1265621ED00720710 /* IamRichTests.swift */; };
 		DE5B99AD265621ED00720710 /* IamRichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B99AC265621ED00720710 /* IamRichUITests.swift */; };
 		DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */; };
-		DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */; };
 		DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A062265ED58C0065BF4B /* IntroViewController.swift */; };
+		DEB0EAAD2665D1460032680E /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB0EAAC2665D1460032680E /* CustomView.xib */; };
+		DEB0EAAF2665D15B0032680E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB0EAAE2665D15B0032680E /* CustomView.swift */; };
 		DEC8913826636C86008570AE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEC8913726636C86008570AE /* QuizViewController.swift */; };
+		DEEB898A26692E4A0054B9B0 /* QuizView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEB898926692E4A0054B9B0 /* QuizView.storyboard */; };
+		DEEB898C26692E5B0054B9B0 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB898B26692E5B0054B9B0 /* QuizModel.swift */; };
+		DEEB8992266936290054B9B0 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEB8991266936290054B9B0 /* AppViewController.swift */; };
 		DEECB92426615C3000150384 /* EggViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEECB92326615C3000150384 /* EggViewController.swift */; };
 		DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,9 +60,13 @@
 		DE5B99AC265621ED00720710 /* IamRichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IamRichUITests.swift; sourceTree = "<group>"; };
 		DE5B99AE265621ED00720710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
-		DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		DEA8A062265ED58C0065BF4B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		DEB0EAAC2665D1460032680E /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		DEB0EAAE2665D15B0032680E /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		DEC8913726636C86008570AE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		DEEB898926692E4A0054B9B0 /* QuizView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizView.storyboard; sourceTree = "<group>"; };
+		DEEB898B26692E5B0054B9B0 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		DEEB8991266936290054B9B0 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		DEECB92326615C3000150384 /* EggViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggViewController.swift; sourceTree = "<group>"; };
 		DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetttingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +119,7 @@
 		DE5B9989265621E900720710 /* IamRich */ = {
 			isa = PBXGroup;
 			children = (
+				DECBAE28266543EC00021613 /* customView */,
 				DEC8913626636C62008570AE /* features */,
 				DE5B998A265621E900720710 /* AppDelegate.swift */,
 				DE5B998C265621E900720710 /* SceneDelegate.swift */,
@@ -118,12 +127,12 @@
 				DE5B9990265621E900720710 /* Main.storyboard */,
 				DEEDC7D2265F697C008C8F4D /* SetttingViewController.swift */,
 				DEA8A062265ED58C0065BF4B /* IntroViewController.swift */,
-				DEA8A060265ED28C0065BF4B /* DashboardViewController.swift */,
 				DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */,
 				DE5B9993265621ED00720710 /* Assets.xcassets */,
 				DE5B9995265621ED00720710 /* LaunchScreen.storyboard */,
 				DE5B9998265621ED00720710 /* Info.plist */,
 				DEECB92326615C3000150384 /* EggViewController.swift */,
+				DEEB8991266936290054B9B0 /* AppViewController.swift */,
 			);
 			path = IamRich;
 			sourceTree = "<group>";
@@ -149,7 +158,9 @@
 		DEC8913526636C54008570AE /* mvc */ = {
 			isa = PBXGroup;
 			children = (
-				DEC8913726636C86008570AE /* QuizViewController.swift */,
+				DEEB899626693E490054B9B0 /* controller */,
+				DEEB899426693E340054B9B0 /* view */,
+				DEEB899326693E2A0054B9B0 /* model */,
 			);
 			path = mvc;
 			sourceTree = "<group>";
@@ -160,6 +171,39 @@
 				DEC8913526636C54008570AE /* mvc */,
 			);
 			path = features;
+			sourceTree = "<group>";
+		};
+		DECBAE28266543EC00021613 /* customView */ = {
+			isa = PBXGroup;
+			children = (
+				DEB0EAAC2665D1460032680E /* CustomView.xib */,
+				DEB0EAAE2665D15B0032680E /* CustomView.swift */,
+			);
+			path = customView;
+			sourceTree = "<group>";
+		};
+		DEEB899326693E2A0054B9B0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB898B26692E5B0054B9B0 /* QuizModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DEEB899426693E340054B9B0 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB898926692E4A0054B9B0 /* QuizView.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DEEB899626693E490054B9B0 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DEC8913726636C86008570AE /* QuizViewController.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +310,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEB898A26692E4A0054B9B0 /* QuizView.storyboard in Resources */,
 				DE5B9997265621ED00720710 /* LaunchScreen.storyboard in Resources */,
+				DEB0EAAD2665D1460032680E /* CustomView.xib in Resources */,
 				DE5B9994265621ED00720710 /* Assets.xcassets in Resources */,
 				DE5B9992265621E900720710 /* Main.storyboard in Resources */,
 			);
@@ -295,10 +341,12 @@
 			files = (
 				DE5B998F265621E900720710 /* LoginViewController.swift in Sources */,
 				DE5B998B265621E900720710 /* AppDelegate.swift in Sources */,
-				DEA8A061265ED28C0065BF4B /* DashboardViewController.swift in Sources */,
 				DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */,
 				DEECB92426615C3000150384 /* EggViewController.swift in Sources */,
+				DEEB8992266936290054B9B0 /* AppViewController.swift in Sources */,
+				DEB0EAAF2665D15B0032680E /* CustomView.swift in Sources */,
 				DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */,
+				DEEB898C26692E5B0054B9B0 /* QuizModel.swift in Sources */,
 				DEC8913826636C86008570AE /* QuizViewController.swift in Sources */,
 				DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */,
 				DE5B998D265621E900720710 /* SceneDelegate.swift in Sources */,
