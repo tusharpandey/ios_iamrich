@@ -12,8 +12,12 @@ class AppViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "App Parent"
     }
+    
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(true)
+//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+//    }
     
     @IBAction func openQuiz(_ sender: Any) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "QuizView", bundle: nil)
@@ -21,6 +25,11 @@ class AppViewController: UIViewController {
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
     
+    @IBAction func openBmi(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name:"BmiView",bundle:nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "BmiViewController") as! BmiViewController
+        self.navigationController?.pushViewController(newViewController, animated: true)
+    }
     /*
     // MARK: - Navigation
 

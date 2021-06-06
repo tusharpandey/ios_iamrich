@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE1CC004266B6AAB00595F23 /* BmiView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1CC003266B6AAB00595F23 /* BmiView.storyboard */; };
+		DE1CC006266B6AC700595F23 /* BmiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC005266B6AC700595F23 /* BmiViewController.swift */; };
+		DE1CC008266B6AE800595F23 /* BmiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1CC007266B6AE800595F23 /* BmiModel.swift */; };
+		DE539DBC266D21680027E1F2 /* ShowBMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE539DBB266D21680027E1F2 /* ShowBMIViewController.swift */; };
 		DE5B998B265621E900720710 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B998A265621E900720710 /* AppDelegate.swift */; };
 		DE5B998D265621E900720710 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B998C265621E900720710 /* SceneDelegate.swift */; };
 		DE5B998F265621E900720710 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B998E265621E900720710 /* LoginViewController.swift */; };
@@ -15,6 +19,7 @@
 		DE5B9997265621ED00720710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5B9995265621ED00720710 /* LaunchScreen.storyboard */; };
 		DE5B99A2265621ED00720710 /* IamRichTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B99A1265621ED00720710 /* IamRichTests.swift */; };
 		DE5B99AD265621ED00720710 /* IamRichUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5B99AC265621ED00720710 /* IamRichUITests.swift */; };
+		DE7483EF266BD7F3000714C5 /* NavigationBarUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7483EE266BD7F3000714C5 /* NavigationBarUtil.swift */; };
 		DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */; };
 		DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA8A062265ED58C0065BF4B /* IntroViewController.swift */; };
 		DEB0EAAD2665D1460032680E /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB0EAAC2665D1460032680E /* CustomView.xib */; };
@@ -45,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE1CC003266B6AAB00595F23 /* BmiView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BmiView.storyboard; sourceTree = "<group>"; };
+		DE1CC005266B6AC700595F23 /* BmiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiViewController.swift; sourceTree = "<group>"; };
+		DE1CC007266B6AE800595F23 /* BmiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BmiModel.swift; sourceTree = "<group>"; };
+		DE539DBB266D21680027E1F2 /* ShowBMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBMIViewController.swift; sourceTree = "<group>"; };
 		DE5B9987265621E900720710 /* IamRich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IamRich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5B998A265621E900720710 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE5B998C265621E900720710 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +68,7 @@
 		DE5B99A8265621ED00720710 /* IamRichUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IamRichUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5B99AC265621ED00720710 /* IamRichUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IamRichUITests.swift; sourceTree = "<group>"; };
 		DE5B99AE265621ED00720710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7483EE266BD7F3000714C5 /* NavigationBarUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarUtil.swift; sourceTree = "<group>"; };
 		DEA8A05E265ED0280065BF4B /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		DEA8A062265ED58C0065BF4B /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		DEB0EAAC2665D1460032680E /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
@@ -96,6 +106,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE1CBFFD266B6A3B00595F23 /* quizApp */ = {
+			isa = PBXGroup;
+			children = (
+				DEEB899626693E490054B9B0 /* controller */,
+				DEEB899426693E340054B9B0 /* view */,
+				DEEB899326693E2A0054B9B0 /* model */,
+			);
+			path = quizApp;
+			sourceTree = "<group>";
+		};
+		DE1CBFFF266B6A6900595F23 /* bmiApp */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC002266B6A8600595F23 /* controller */,
+				DE1CC001266B6A7C00595F23 /* view */,
+				DE1CC000266B6A7000595F23 /* model */,
+			);
+			path = bmiApp;
+			sourceTree = "<group>";
+		};
+		DE1CC000266B6A7000595F23 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC007266B6AE800595F23 /* BmiModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DE1CC001266B6A7C00595F23 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC003266B6AAB00595F23 /* BmiView.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DE1CC002266B6A8600595F23 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE1CC005266B6AC700595F23 /* BmiViewController.swift */,
+				DE539DBB266D21680027E1F2 /* ShowBMIViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		DE5B997E265621E900720710 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +174,7 @@
 		DE5B9989265621E900720710 /* IamRich */ = {
 			isa = PBXGroup;
 			children = (
+				DE7483ED266BD7DA000714C5 /* util */,
 				DECBAE28266543EC00021613 /* customView */,
 				DEC8913626636C62008570AE /* features */,
 				DE5B998A265621E900720710 /* AppDelegate.swift */,
@@ -155,12 +211,19 @@
 			path = IamRichUITests;
 			sourceTree = "<group>";
 		};
+		DE7483ED266BD7DA000714C5 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DE7483EE266BD7F3000714C5 /* NavigationBarUtil.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		DEC8913526636C54008570AE /* mvc */ = {
 			isa = PBXGroup;
 			children = (
-				DEEB899626693E490054B9B0 /* controller */,
-				DEEB899426693E340054B9B0 /* view */,
-				DEEB899326693E2A0054B9B0 /* model */,
+				DE1CBFFF266B6A6900595F23 /* bmiApp */,
+				DE1CBFFD266B6A3B00595F23 /* quizApp */,
 			);
 			path = mvc;
 			sourceTree = "<group>";
@@ -311,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEEB898A26692E4A0054B9B0 /* QuizView.storyboard in Resources */,
+				DE1CC004266B6AAB00595F23 /* BmiView.storyboard in Resources */,
 				DE5B9997265621ED00720710 /* LaunchScreen.storyboard in Resources */,
 				DEB0EAAD2665D1460032680E /* CustomView.xib in Resources */,
 				DE5B9994265621ED00720710 /* Assets.xcassets in Resources */,
@@ -341,13 +405,17 @@
 			files = (
 				DE5B998F265621E900720710 /* LoginViewController.swift in Sources */,
 				DE5B998B265621E900720710 /* AppDelegate.swift in Sources */,
+				DE1CC008266B6AE800595F23 /* BmiModel.swift in Sources */,
+				DE7483EF266BD7F3000714C5 /* NavigationBarUtil.swift in Sources */,
 				DEEDC7D3265F697C008C8F4D /* SetttingViewController.swift in Sources */,
 				DEECB92426615C3000150384 /* EggViewController.swift in Sources */,
 				DEEB8992266936290054B9B0 /* AppViewController.swift in Sources */,
+				DE539DBC266D21680027E1F2 /* ShowBMIViewController.swift in Sources */,
 				DEB0EAAF2665D15B0032680E /* CustomView.swift in Sources */,
 				DEA8A063265ED58C0065BF4B /* IntroViewController.swift in Sources */,
 				DEEB898C26692E5B0054B9B0 /* QuizModel.swift in Sources */,
 				DEC8913826636C86008570AE /* QuizViewController.swift in Sources */,
+				DE1CC006266B6AC700595F23 /* BmiViewController.swift in Sources */,
 				DEA8A05F265ED0280065BF4B /* MainNavigationController.swift in Sources */,
 				DE5B998D265621E900720710 /* SceneDelegate.swift in Sources */,
 			);
