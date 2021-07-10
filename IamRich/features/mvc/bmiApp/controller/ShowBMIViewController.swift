@@ -12,9 +12,18 @@ class ShowBMIViewController: UIViewController {
 
     @IBOutlet weak var bmiValue: UILabel!
     
+    @IBOutlet weak var backgroundImage: UIImageView!
+    
     var receivedBmi : Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bmiValue.text = "\(receivedBmi)"
+        
+        if(receivedBmi < 2){
+            backgroundImage.backgroundColor = .yellow
+        }else{
+            backgroundImage.backgroundColor = .orange
+        }
     }
 }

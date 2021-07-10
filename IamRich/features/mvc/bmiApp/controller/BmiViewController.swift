@@ -14,26 +14,21 @@ class BmiViewController: UIViewController {
     
     @IBOutlet weak var displayWeightLabel: UILabel!
     
+    var bmiModel = UserData()
+    
     @IBAction func onHeightChangedListener(_ sender: UISlider) {
         displayHeightLable.text = "\(sender.value)"
+        bmiModel.height = Int(sender.value)
     }
     
     @IBAction func onWeightChangedListener(_ sender: UISlider) {
         displayWeightLabel.text = "\(sender.value)"
+        bmiModel.weight = Int(sender.value)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let secondViewController = segue.destination as! ShowBMIViewController
-        let height = Float(displayHeightLable.text!)
-        let weight = Float(displayWeightLabel.text!)
-        print("height : \(displayHeightLable.text!)")
-        print("weight : \(displayWeightLabel.text!)")
-        let tempHeight = Int(height!)
-        let tempWeight = Int(weight!)
-        print("height 1 : \(Int(height!))")
-        print("weight 1 : \(Int(weight!))")
-        let bmi : Int = Int(tempHeight * 10000)/(tempWeight*tempWeight)
-        secondViewController.receivedBmi = bmi
+        secondViewController.receivedBmi = bmiModel.getBMI()
     }
     
     // INITIALIZER

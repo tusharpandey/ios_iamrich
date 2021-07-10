@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct UserData {
+    var height : Int = 5
+    var weight : Int = 70
+    
+    func getBMI() -> Int {
+        return self.height * self.weight
+    }
+}
